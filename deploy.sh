@@ -1,5 +1,5 @@
-docker build -t denk3310/multi-client:latest -t denk3310/multi-client:$SHA -f .client/Dockerfile ./client
-docker build -t denk3310/multi-server:latest -t denk3310/multi-server:$SHA -f .server/Dockerfile ./server
+docker build -t denk3310/multi-client:latest -t denk3310/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t denk3310/multi-server:latest -t denk3310/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t denk3310/multi-worker:latest -t denk3310/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push denk3310/multi-client:latest
 docker push denk3310/multi-server:latest
